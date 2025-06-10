@@ -1,0 +1,130 @@
+body {
+    font-family: 'Space Mono', monospace;
+    background-color: #FFE7BE;
+    
+}
+
+header {
+    background-color: #8b4513; /* Cor marrom */
+    color: #ffd700; /* Cor amarelo */
+    text-align: center;
+    padding: 20px;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #ffd700; /* Cor dos links */
+    font-size: 1.2em; /* Tamanho da fonte dos links */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* Espaça os itens do header */
+    align-items: center; /* Alinha verticalmente os itens */
+    padding: 10px 20px; /* Adiciona espaçamento ao redor do header */
+}
+
+.nav {
+    display: flex; /* Alinha os links de navegação em linha */
+}
+
+.nav a {
+    margin-right: 20px; /* Espaçamento entre os links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #ffd700; /* Cor dos links */
+}
+
+h1 {
+    flex-grow: 1; /* Permite que o h1 ocupe o espaço restante */
+    text-align: center; /* Centraliza o texto do h1 */
+    margin: 0; /* Remove a margem padrão do h1 */
+    padding-left: 80px; /* Adiciona espaçamento à esquerda */
+}
+
+.h1 a{
+    flex-grow: 1; /* Permite que o h1 ocupe o espaço restante */
+    text-align: center; /* Centraliza o texto do h1 */
+    margin: 0; /* Remove a margem padrão do h1 */
+    padding-left: 40px; /* Adiciona espaçamento à esquerda */
+}
+
+.logo {
+    height: auto; /* Mantém a proporção da logo */
+    width: 245px; /* Define a largura da logo */
+}
+
+h2{
+    font-size: xx-large;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap; /* permite que os itens quebrem para a próxima linha */
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.item {
+    width: 40%;
+    margin: 10px;
+    background-color: #FF9900;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: rgb(50, 50, 50) 0px 5px 10px;
+}
+
+.item img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    align-items: center;
+    background-color: #8b4513; /* Cor marrom */
+    color: #ffd700;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.zoom-mais{
+    transition: 0.5s;
+    border: #000 1px solid;
+    max-width: 100%;
+    margin-left: 10px;
+}
+
+.zoom-mais:hover{
+    transform: scale(1.02);
+}
+
+/* Consultas de mídia para responsividade */
+@media (max-width: 768px) {
+    .item {
+        width: 90%; /* Aumenta a largura dos itens em telas menores */
+        margin: 10px auto; /* Centraliza os itens */
+    }
+    
+    header h1, footer {
+        font-size: 1.5em; /* Ajuste o tamanho da fonte */
+    }
+}
+
+@media (max-width: 480px) {
+    header, footer {
+        font-size: 1.2em; /* Ajuste em telas muito pequenas */
+    }
+
+    .item {
+        background-color: #FFCC00; /* Muda a cor do fundo do item em telas pequenas */
+    }
+}

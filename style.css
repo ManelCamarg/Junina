@@ -1,0 +1,99 @@
+body {
+    font-family: 'Space Mono', monospace;
+    background-color: #FFE7BE;
+    
+}
+
+header {
+    background-color: #8b4513; /* Cor marrom */
+    color: #ffd700; /* Cor amarelo */
+    text-align: center;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px; /* Adicione um pouco de espaçamento */
+}
+
+.logo {
+    height: 50px; /* Ajuste a altura da logo conforme necessário */
+}
+
+h1 {
+    margin: 0; /* Remove a margem padrão do h1 */
+    color: #ffd700; /* Cor do título */
+}
+
+
+.section {
+    display: flex;
+    flex-wrap: wrap; /* permite que os itens quebrem para a próxima linha */
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.item {
+    width: 40%;
+    margin: 10px;
+    background-color: #FF9900;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: rgb(50, 50, 50) 0px 5px 10px;
+}
+
+.item img {
+    max-width: 94%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    align-items: center;
+    background-color: #8b4513; /* Cor marrom */
+    color: #ffd700;
+    margin-top: 70px;
+    padding: 15px;
+}
+
+.zoom-mais{
+    transition: 0.5s;
+    border: #000 1px solid;
+    max-width: 100%;
+    margin-left: 10px;
+}
+
+.zoom-mais:hover{
+    transform: scale(1.02);
+}
+
+/* Consultas de mídia para responsividade */
+@media (max-width: 768px) {
+    .item {
+        width: 90%; /* Aumenta a largura dos itens em telas menores */
+        margin: 10px auto; /* Centraliza os itens */
+    }
+    
+    header h1, footer {
+        font-size: 1.5em; /* Ajuste o tamanho da fonte */
+    }
+}
+
+@media (max-width: 480px) {
+    header, footer {
+        font-size: 1.2em; /* Ajuste em telas muito pequenas */
+    }
+
+    .item {
+        background-color: #FFCC00; /* Muda a cor do fundo do item em telas pequenas */
+    }
+}
